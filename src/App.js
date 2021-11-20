@@ -32,7 +32,7 @@ export default class App extends Component {
           <Switch>
           <Route exact path="/">
               
-              <News key="general" pageSize={15} category="general" country={handleCountry}/>
+              <News key="general" pageSize={15} category="general"  country={handleCountry}/>
           </Route>
           <Route exact path="/business">
               <News key="business" pageSize={15} category="business" country={handleCountry}/>
@@ -54,15 +54,15 @@ export default class App extends Component {
           </Route>
           <Route exact path="/sports"><News key="sports" pageSize={15} category="sports" country={handleCountry}/></Route>
 
-          <Route exact path="/in"> {handleCountry="in"}  <News key="in" pageSize={15} category="sports" country={handleCountry}/></Route>
-          <Route exact path="/us"> {handleCountry="us"} <News key="us" pageSize={15} category="sports" country={handleCountry} /></Route>
-          <Route exact path="/cn">{handleCountry="cn"}<News key="cn" pageSize={15} category="sports" country={handleCountry}/></Route>
-          <Route exact path="/gb">{handleCountry="gb"}<News key="gb" pageSize={15} category="sports" country={handleCountry}/></Route>
-          <Route exact path="/fr">{handleCountry="fr"}<News key="fr" pageSize={15} category="sports" country={handleCountry}/></Route>
-          <Route exact path="/it">{handleCountry="it"}<News key="it" pageSize={15} category="sports" country={handleCountry}/></Route>
-          <Route exact path="/br">{handleCountry="br"}<News key="br" pageSize={15} category="sports" country={handleCountry}/></Route>
-          <Route exact path="/au">{handleCountry="au"}<News key="au" pageSize={15} category="sports" country={handleCountry}/></Route>
-          <Route exact path="/jp">{handleCountry="jp"}<News key="jp" pageSize={15} category="sports" country={handleCountry}/></Route>
+          <Route exact path="/in"> {handleCountry="in"}  <News key="in" pageSize={15} category="general" country_Name="India" country={handleCountry}/></Route>
+          <Route exact path="/us"> {handleCountry="us"} <News key="us" pageSize={15} category="general" country_Name="United States" country={handleCountry} /></Route>
+          <Route exact path="/cn">{handleCountry="cn"}<News key="cn" pageSize={15} category="general" country_Name="China" country={handleCountry}/></Route>
+          <Route exact path="/gb">{handleCountry="gb"}<News key="gb" pageSize={15} category="general" country_Name="United Kindoms" country={handleCountry}/></Route>
+          <Route exact path="/fr">{handleCountry="fr"}<News key="fr" pageSize={15} category="general" country_Name="France" country={handleCountry}/></Route>
+          <Route exact path="/it">{handleCountry="it"}<News key="it" pageSize={15} category="general" country_Name="Itlay" country={handleCountry}/></Route>
+          <Route exact path="/br">{handleCountry="br"}<News key="br" pageSize={15} category="general" country_Name="Brazil" country={handleCountry}/></Route>
+          <Route exact path="/au">{handleCountry="au"}<News key="au" pageSize={15} category="general" country_Name="Austrila" country={handleCountry}/></Route>
+          <Route exact path="/jp">{handleCountry="jp"}<News key="jp" pageSize={15} category="general" country_Name="Japan" country={handleCountry}/></Route>
         </Switch>
 
 

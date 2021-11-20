@@ -8,11 +8,11 @@ export class NewsItem extends Component {
 
         return (
             <div>
-                <div className="card my-3" style={{ borderRadius:"10px"}}>
+                <div className="card newCard my-3" style={{ borderRadius:"10px",backgroundColor:"#dcdcdc"}}>
                  
                     <p class="card-text mx-3 my-2"><strong style={{color:"#7B0000"}}>By {!author?"Unknown":author}</strong></p>
                     {/* <span class="badge bg-warning" style={{color:'black'}}>{source}</span> */}
-                    <span class="position-absolute top-0  translate-middle badge rounded-pill bg-warning " style={{color:'black',left:"85%",zIndex:1}}>
+                    <span class="position-absolute top-0  translate-middle badge rounded-pill bg-warning " style={{color:'black',left:"85 %",zIndex:1}}>
                         {source}
                         <span class="visually-hidden">unread messages</span>
                     </span>
